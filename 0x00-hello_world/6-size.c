@@ -2,7 +2,7 @@
 /**
  * main - Entry point to print sizes
  * code by kindness
- * Return: 0
+ * Return: always 0 (success)
  *
  */
 int main(void)

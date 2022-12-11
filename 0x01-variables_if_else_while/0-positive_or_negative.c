@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* betty style doc for function main goes there */
+/**
+ *main - to print values zero-positive_or_negative
+ */
 int main(void)
 
 {

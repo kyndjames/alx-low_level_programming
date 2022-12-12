@@ -10,7 +10,7 @@ int main(void)
 {
 	int ch = 'a';
 
-	whlie(ch <= 'z');
+	while (ch <= 'z');
 	{
 		if ((ch != 'e') && (ch != 'q'))
 		{

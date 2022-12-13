@@ -12,7 +12,7 @@ int main(void)
 
 	for (ones = '0'; ones <= '9'; ones++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (tens = '1'; tens <= '9'; tens++)
 		{
 			if (!((ones == tens) || (tens > ones)))
 			{

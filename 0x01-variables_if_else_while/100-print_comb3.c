@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (tens = '1'; tens <= '9'; tens++)
 		{
-			if (((ones == tens) || (tens > ones)))
+			if ((!(ones == tens) || (tens > ones)))
 			{
 				putchar(ones);
 				putchar(tens);

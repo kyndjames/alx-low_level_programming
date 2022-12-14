@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- * main - Entry piont of the alphabet
+ * print_alphabet - printing letters in lower case:
  *
  *  Return: 0
  */
-int main(void)
+void print_alphabet(void);
+
 {
 	int bh = 'a';
 
 	while (bh <= 'z')
 	{
 		_putchar(bh);
-		bh++;
-	}
+		bh++
 		_putchar('\n');
-		return (0);
+	}
+		return (void);
 }

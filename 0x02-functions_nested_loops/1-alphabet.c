@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * main - Entry piont
+ * main - Entry piont of the alphabet
  *
  *  Return: 0
  */
 int main(void)
 {
-	int ch = 'a';
+	int bh = 'a';
 
-	while (ch <= 'z')
+	while (bh <= 'z')
 	{
-		_putchar(ch);
+		_putchar(bh);
 		ch++;
 	}
 		_putchar('\n');

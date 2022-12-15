@@ -1,4 +1,5 @@
-#inlcude "main.h"
+#include "main.h"
+
 /**
  * _islower -> checking for lowercase character
  * Return: 1 and 0 depending on condition

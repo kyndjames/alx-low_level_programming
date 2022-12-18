@@ -2,16 +2,22 @@
 /**
  * print_last_digit -> prints the last digit of a number
  * @n: rgument
- * Return: the value of the last digit
+ * Return: 0
  */
 int print_last_digit(int n)
 {
-	int x;
+	int last_digit;
 
 	if (n < 0)
-
-	n = -n;
-	x = n % 10;
-	_putchar(x + '0');
-	return (x);
+	{
+		(-1 * (n % 10));
+		_putchar(last_digit + '0');
+		return (last_digit);
+	}
+	else
+	{
+		last_digit = (n % 10);
+		_putchar(last_digit + '0');
+		return (last_digit);
+	}
 }

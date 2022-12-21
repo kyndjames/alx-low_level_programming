@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int start = 1, end = 0;
+	int start = 1, end = 100;
 
 	while (start <= 100)
 	{

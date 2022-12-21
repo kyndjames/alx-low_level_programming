@@ -9,7 +9,7 @@ void print_diagonal(int n)
 	int count = 0, start = 0, end;
 
 	if (n <= 0)
-		_putcar('\n');
+		_putchar('\n');
 	else
 	{
 		while (count < n)

@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - function that compares two strings
- * @s1: input 1
- * @s2: input 2
+ * @s1: input one
+ * @s2: input two
  * Return: s1[i] = s2[i]
  */
 int _strcmp(char *s1, char *s2)

@@ -21,5 +21,5 @@ char leet(char *n)
 			}
 		}
 	}
-	return (n);
+	return (0);
 }

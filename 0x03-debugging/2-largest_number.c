@@ -34,5 +34,5 @@ int largest_number(int a, int b, int c)
 	{
 		printf("%d is the largest number", c);
 	}
-	return (largest);
+	return (0);
 }

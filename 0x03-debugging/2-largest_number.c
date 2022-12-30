@@ -22,15 +22,15 @@ int largest_number(int a, int b, int c)
 	b = -98;
 	c = 0;
 	largest = largest_number(a, b, c);
-	if (a > b && a > c)
+	if (a > b && b > c)
 	{
 		printf("%d is the largest number", a);
 	}
-	else if (b > a && b > c)
+	else if (b > a && a > c)
 	{
 		printf("%d is the largest number", b);
 	}
-	else if (c > b && c > a)
+	else if (c > b && b > a)
 	{
 		printf("%d is the largest number", c);
 	}

@@ -24,15 +24,15 @@ int largest_number(int a, int b, int c)
 	largest = largest_number(a, b, c);
 	if (a > b && a > c)
 	{
-		putchar("%d is the largest number", a);
+		printf("%d is the largest number", a);
 	}
 	else if (b > a && b > c)
 	{
-		putchar("%d is the largest number", b);
+		printf("%d is the largest number", b);
 	}
 	else if (c > a && c > b)
 	{
-		putchar("%d is the largest number", c);
+		printf("%d is the largest number", c);
 	}
 	return (largest);
 }

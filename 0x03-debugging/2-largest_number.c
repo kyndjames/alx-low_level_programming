@@ -21,19 +21,18 @@ int largest_number(int a, int b, int c)
 	a = 972;
 	b = -98;
 	c = 0;
+	largest = largest_number(a, b, c);
 	if (a > b && a > c)
 	{
-		putchar(largest = a);
+		printf("%d is the largest number", a);
 	}
 	else if (b > a && b > c)
 	{
-		putchar(largest = b);
+		printf("%d is the largest number", b);
 	}
 	else if (c > b && c > a)
 	{
-		putchar(largest = c);
+		printf("%d is the largest number", c);
 	}
 	return (largest);
 }
-
-

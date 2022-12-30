@@ -30,9 +30,10 @@ int largest_number(int a, int b, int c)
 	{
 		printf("%d is the largest number", b);
 	}
-	else
+	else if (c > a && c > b)
 	{
 		printf("%d is the largest number", c);
 	}
+	else
 	return (largest);
 }

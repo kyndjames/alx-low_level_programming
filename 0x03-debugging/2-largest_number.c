@@ -17,25 +17,17 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 	
-	a = 972;
-	b = -98;
-	c = 0;
-	largest = largest_number(a, b, c);
 	if (a > b && a > c)
 	{
-		printf("largest = a", a);
+		largest = a;
 	}
 	else if (b > a && b > c)
 	{
-		printf("largest = b", b);
+		largest = b;
 	}
 	else if (c > a && c > b)
 	{
-		printf("largest = c", c);
-	}
-	esle if ((a == b) && (b == c) && (c == a))
-	{
-		printf("equal");
+		largest = c;
 	}
 	return (largest);
 }

@@ -33,5 +33,6 @@ int largest_number(int a, int b, int c)
 	{
 		printf("largest = c", c);
 	}
+	esle if ((a == b) && (b == c) && (c == a))
 	return (largest);
 }

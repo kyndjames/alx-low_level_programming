@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * _strchr -  locates a character in a string
- * @s:  the string
- * @c: the character 
+ * @s: the string
+ * @c: the character
  * Return: c
  */
 char *_strchr(char *s, char c)

@@ -10,7 +10,7 @@ char *_strdup(char *str)
 	char *pointr;
 	int str_ln = 0;
 	int count;
-	
+
 	for (str_ln = 0; str[str_ln] != '\0'; str_ln++)
 	{
 		str_ln++;
@@ -24,5 +24,6 @@ char *_strdup(char *str)
 	{
 		pointr[count] = str[count];
 	}
+	pointr[count] = '\0';
 	return (pointr);
 }

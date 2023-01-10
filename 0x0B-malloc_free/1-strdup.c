@@ -16,11 +16,11 @@ char *_strdup(char *str)
 		str_ln++;
 	}
 	pointr = malloc(sizeof(char) * str_ln + 1);
-	/*if (pointr == NULL)
-	{
-		return (NULL);
-	}*/
 	for (count = 0; pointr[count] != '\0'; count++)
+		if (str_ln == 0)
+		{
+			return (NULL);
+		}
 	{
 		pointr[count] = str[count];
 	}

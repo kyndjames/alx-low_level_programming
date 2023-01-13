@@ -9,6 +9,6 @@ void *malloc_checked(unsigned int b)
 {
 	unsigned int *check;
 
-	check = (unsigned int*) malloc(sizeof(unsigned int) * b);
+	check = (unsigned int *) malloc(sizeof(unsigned int) * b);
 	return (check);
 }

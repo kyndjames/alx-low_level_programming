@@ -2,15 +2,28 @@
 /**
  * str_ln - string length
  * @str: string
+ * @len: length of string
  * Return: count
  */
-int str_ln(char str[])
+int str_ln(char *str, int len)
 {
-	int count = 0, i = 0;
-
-	for (i = 0; str[i] != '\0'; i++)
-		count++;
-	return (count);
+	if (*str == 0)
+	return (len - 1);
+	return (str_ln(str + len, len + 1));
+}
+/**
+ * str_ln2 - compares string vs string reverse
+ * @str: string
+ * @len: length
+ * Return: On success 1
+ */
+int str_ln2(char *str, int len)
+{
+	if (*str != *(str + len))
+	return (0);
+	else if (*str == 0)
+	return (1);
+	return (str_ln2(str + 1, len - 2));
 }
 
 /**
@@ -20,14 +33,9 @@ int str_ln(char str[])
  */
 int is_palindrome(char *s)
 {
-	int middle, i, len;
-	char *str;
+	int len;
 
-	str = s;
-	len = str_ln(s);
-	middle = len / 2;
-	for (i = 0; i < middle; i++)
-		if (str[i] != str[len - i - 1])
-			return (0);
-	return (1);
+	len = str_ln(s, 0);
+	return (str_ln2(s, len));
+	return (0);
 }

@@ -23,7 +23,7 @@ int str_ln2(char *str, int len)
 	return (1);
 	else
 	return (0);
-	return (str_ln2(str + 1, len - 2));
+	return (str_ln2(str + 1, len - 1));
 }
 
 /**

@@ -7,8 +7,8 @@
  */
 int str_ln(char *str, int len)
 {
-	if (*str == '\0')
-	return (len -1);
+	if (*str == 0)
+	return (len - 1);
 	return (str_ln(str + len, len + 1));
 }
 /**

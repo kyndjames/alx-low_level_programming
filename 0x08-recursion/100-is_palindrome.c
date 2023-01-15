@@ -8,7 +8,7 @@
 int str_ln(char *str, int len)
 {
 	if (*str == '\0')
-	return (len);
+	return (len -1);
 	return (str_ln(str + len, len + 1));
 }
 /**
@@ -20,9 +20,9 @@ int str_ln(char *str, int len)
 int str_ln2(char *str, int len)
 {
 	if (*str != *(str + len))
-	return (0);
-	else if (*str == 0)
 	return (1);
+	else
+	return (0);
 	return (str_ln2(str + 1, len - 2));
 }
 

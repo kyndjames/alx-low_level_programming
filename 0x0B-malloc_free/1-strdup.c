@@ -25,5 +25,5 @@ char *_strdup(char *str)
 		pointr[count] = str[count];
 	}
 	pointr[count] = '\0';
-	return (pointr);
+	return (str);
 }

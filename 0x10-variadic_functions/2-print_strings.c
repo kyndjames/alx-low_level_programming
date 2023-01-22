@@ -5,7 +5,7 @@
  * print_strings - function that prints strings
  * @separator: string to be printed
  * @n: numbers of strings passed to the function
- * Return: 0
+ * Return: no return
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -25,6 +25,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if (separator)
 				printf("%s", separator);
 	}
-	printf("\n");
 	va_end(ap);
+	printf("\n");
 }

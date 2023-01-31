@@ -15,15 +15,19 @@ char *_strdup(char *str)
 	{
 		str_ln++;
 	}
+	if (str[str_ln] == '\0')
+	{
+		return (NULL);
+	}
 	pointr = malloc(sizeof(char) * str_ln + 1);
 	for (count = 0; pointr[count] != '\0'; count++)
-		if (pointr == NULL)
+		if (*pointr == '\0')
 		{
-			return (pointr);
+			return (NULL);
 		}
-	{
 		pointr[count] = str[count];
-	}
-	pointr[count] = '\0';
+
+/*	pointr[count] = '\0';
+	return (pointr);*/
 	return (str);
 }

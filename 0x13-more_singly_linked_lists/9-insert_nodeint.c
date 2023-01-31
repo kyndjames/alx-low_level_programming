@@ -31,7 +31,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 		ptr2 = ptr2->next;
 	}
-	ptr2->next = ptr2->next;
+	ptr1->next = ptr2->next;
 	ptr2->next = ptr1;
 	return (ptr1);
 }
